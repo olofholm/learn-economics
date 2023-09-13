@@ -11,8 +11,61 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$learn-economics-primary: mat.define-palette(mat.$indigo-palette);
-$learn-economics-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+$customPrimary: (
+  50: #fefee7,
+  100:#fbfbc2,
+  200: #f8f899,
+  300: #f9f971,
+  400: #f5f54c,
+  500: #f2f025,
+  600: #f8e223,
+  700: #f8c913,
+  800: #f8b100,
+  900: #f88700,
+
+  contrast: (
+    50: #e1f2f8,
+    100: #b3d8ed,
+    200: #81bddf,
+    300: #4fa2d1,
+    400: #2690c9,
+    500: #007ebe,
+    600: #0077b7,
+    700: #006cae,
+    800: #0062a4,
+    900: #004d8c,
+  )
+);
+
+$costumAccent : (
+  50: #fefae4,
+  100: #fdf0bb,
+  200: #fde790,
+  300: #fddf65,
+  400: #fdd549,
+  500: #fece39,
+  600: #fdc032,
+  700: #fdae2c,
+  800: #fc9e27,
+  900: #fc811c,
+
+  contrast: (
+    50: #e1f2f8,
+    100: #b3d8ed,
+    200: #81bddf,
+    300: #4fa2d1,
+    400: #2690c9,
+    500: #007ebe,
+    600: #0077b7,
+    700: #006cae,
+    800: #0062a4,
+    900: #004d8c,
+  )
+);
+
+$learn-economics-primary: mat.define-palette($customPrimary);
+$learn-economics-accent: mat.define-palette($costumAccent);
 
 // The warn palette is optional (defaults to red).
 $learn-economics-warn: mat.define-palette(mat.$red-palette);
@@ -36,6 +89,8 @@ $learn-economics-theme: mat.define-light-theme((
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter&display=swap');
 
 :root {
+  --primary: #F9F871;
+  --secondary: #FDDE65;
   --black-100: #1A1917;
   --black-75: hsla(40, 6%, 10%, 0.75);
   --black-50: hsla(40, 6%, 10%, 0.50);

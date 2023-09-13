@@ -1,0 +1,28 @@
+h4 {
+    color: var(--black-75);
+    text-align: center;
+    font-weight: 500;
+}
+
+p {
+    color: var(--black-100);
+    line-height: 30px;
+    text-align: center;
+    width: 80vw;
+    max-width: 700px;
+}
+
+.next-btn {
+    width: 128px;
+    height: 48px;
+    background-image: linear-gradient(90deg, var(--primary), var(--secondary));
+    border: none;
+    border-radius: 50px;
+    box-shadow: 1px 5px 10px var(--black-25);
+    transition: all 0.2s ease-in-out;
+}
+
+.next-btn:hover {
+    box-shadow: 1px 5px 12px var(--black-50);
+    transition: all 0.2s ease-in-out;
+}
